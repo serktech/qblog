@@ -5,13 +5,13 @@
         <h1>Welcome to My Blog</h1>
         <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, modi. Maxime explicabo
           neque odio facilis.</p>
-        <nuxt-link to="/contact" class="hire">Hire me</nuxt-link>
+        <nuxt-link to="/contact" class="contact">Contact me</nuxt-link>
       </div>
     </div>
 
     <div class="container">
       <main>
-        <h2>Latest thoughts</h2>
+        <h2>Latest posts</h2>
         <ul>
           <li v-for="(post, index) in posts" :key="index">
             <img :src="post.feature_image">
@@ -52,7 +52,7 @@
       margin-bottom: 1em;
     }
 
-    .hire {
+    .contact {
       background: darken($primary-color, 10%);
       padding: .5em 3em;
       margin: 2em 0 3em;
