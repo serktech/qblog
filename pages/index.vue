@@ -3,7 +3,8 @@
     <div class="hero">
       <div class="container">
         <h1>Welcome to My Blog</h1>
-        <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, modi. Maxime explicabo neque odio facilis.</p>
+        <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, modi. Maxime explicabo
+          neque odio facilis.</p>
         <nuxt-link to="/contact" class="hire">Hire me</nuxt-link>
       </div>
     </div>
@@ -29,12 +30,12 @@
 
 <script>
 
-  import { getPosts } from '~/api/posts';
+  import {getPosts} from '~/api/posts';
 
   export default {
-    async asyncData () {
+    async asyncData() {
       const posts = await getPosts();
-      return { posts: posts }
+      return {posts: posts}
     }
   }
 </script>

@@ -22,8 +22,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: [],
   /*
   ** Plugins to load before mounting the App
   */
@@ -38,7 +37,13 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/style-resources',
   ],
+  styleResources: {
+    scss: [
+      '~assets/_colors.scss'
+      ]
+  },
   /*
   ** Build configuration
   */
